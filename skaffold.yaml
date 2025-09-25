@@ -1,0 +1,10 @@
+apiVersion: skaffold/v2beta29
+kind: Config
+metadata: 
+  name: flask-app
+deploy: 
+  kubectl:
+    manifests:
+      - deployment.yaml
+      - service.yaml
+      - route.yaml
